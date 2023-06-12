@@ -1,2 +1,112 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+section#foto{
+    position: relative;
+    border-radius: 20px;
+}
+
+section#foto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+section#foto1{
+    background: url(../imagens/metal.jpg) no-repeat fixed;
+    background-position: left bottom;
+    background-size: cover;
+    padding: 100px;
+    padding-bottom: 130px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+section#msg-login{
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;    
+    bottom: 0;
+}
+
+h1{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+section > section > p{
+    font-size: 13px;
+}
+
+p.email-senha{
+    background-color: blueviolet;
+    color: white;
+    margin-top: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+#iemail{
+    background-color: rgb(141, 185, 169);
+    padding: 5px;
+    padding-left: 7px;
+    margin-top: 2px;
+    border: none;
+    border-radius: 5px;
+}
+
+#isenha{
+    background-color: rgba(141, 185, 169);
+    padding: 5px;
+    padding-left: 6px;
+    margin-top: 2px;
+    border: none;
+    border-radius: 5px;
+}
+
+#entrar{
+    border: 1px solid rgb(87, 179, 144);
+    border-radius: 5px;
+    background-color: rgb(87, 179, 144);
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#esqueci-senha{
+    border: 1px solid rgba(87, 179, 144, 0.986);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#entrar:hover{
+    background-color: rgb(66, 133, 107);
+    color: white;
+}
+
+#esqueci-senha:hover{
+    background-color: rgb(103, 212, 171);
+}
+
+

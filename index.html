@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
-    
+    <section id="foto">
+        <section id="foto1"></section>
+        <section id="msg-login">
+            <h1>Login</h1>
+            <p>
+                Seja bem-vindo(a) novamente. Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente.
+            </p>
+            <form action="entrar.php" method="post" autocomplete="on">
+                <p class="email-senha">
+                    <label for="iemail">Per</label>
+                    <input type="email" name="email" id="iemail" required autocomplete="username" size="18" placeholder="seu e-mail">
+                </p>
+
+                <p class="email-senha">
+                    <label for="isenha">cha</label>
+                    <input type="password" name="senha" id="isenha" required minlength="6" autocomplete="current-password" size="18" placeholder="sua senha">
+                </p>
+
+                <p id="botoes">
+                    <input type="submit" value="Entrar" id="entrar"><br>
+                    <a href="esqueci.html"><input type="button" value="Esqueci a senha" id="esqueci-senha"></a>
+                </p>
+            </form>
+        </section>        
+    </section>
 </body>
 </html>
