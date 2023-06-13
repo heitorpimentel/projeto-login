@@ -10,6 +10,8 @@
 
 body{
     position: relative;
+    width: 100vw;
+    height: 100vh;
     background-color: #5f2c82;
 }
 
@@ -19,40 +21,40 @@ body, html{
     width: 100vw;
 }
 
-section#foto{
-    
-}
-
-section#foto{
+section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
-section#foto1{
+section#login > section#imagem{
     display: block;
     background: url(../imagens/metal.jpg) no-repeat fixed;
     background-position: left bottom;
     background-size: cover;
     height: 200px;
-    padding-bottom: 130px;
 }
 
-section#msg-login{
+section#formulario{
     display: block;
     background-color: white;
     padding: 10px;
     padding-bottom: 30px;
     border-radius: 0px 0px 20px 20px;
-    position: absolute;    
-    bottom: 0;
+}
+
+section#formulario > p{
+    font-size: 0.8em;
 }
 
 h1{
@@ -61,34 +63,35 @@ h1{
     font-size: 1.5em;
 }
 
-section > section > p{
-    font-size: 13px;
+p.email-senha{
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 5px;
 }
 
-p.email-senha{
-    background-color: blueviolet;
+p.email-senha span{
     color: white;
-    margin-top: 5px;
-    padding-left: 5px;
+    font-size: 1.5em;
+    padding: 5px;
+    width: 40px;
+    margin-top: 2px;
     border-radius: 5px;
 }
 
-#iemail{
+p.email-senha > input{
     background-color: rgb(141, 185, 169);
     padding: 5px;
-    padding-left: 7px;
-    margin-top: 2px;
     border: none;
     border-radius: 5px;
+    width: calc(100% - 45px);
+    height: 100%;
+    transform: translateY(-6px);
 }
 
-#isenha{
-    background-color: rgba(141, 185, 169);
-    padding: 5px;
-    padding-left: 6px;
-    margin-top: 2px;
-    border: none;
-    border-radius: 5px;
+p.email-senha > input:focus-within{
+    background-color: white;
 }
 
 #entrar{
